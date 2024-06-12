@@ -9,6 +9,7 @@ public class Main {
         try {
             FileWriter writer = new FileWriter("poem.txt");
             writer.write("Roses are red \nViolets are blue \nBooty booty booty \nRockin' everywhere!");
+            writer.append("\n(A poem by bro)");
             writer.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
